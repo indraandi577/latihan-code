@@ -4,32 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>latihan portofolio</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="style1.css" />
   </head>
-  <nav>
-    <a href="cobaaa.html">Home</a>
-    <a href="cobaaa.html">Tentang saya</a>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="cobaaa.html"
+            >Home</a
+          >
+          <a class="nav-link" href="IMG_1300.jpg">tentang saya</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
   </nav>
   <body>
-    <h1>Selamat datang di latihan html dan css</h1>
+    <h1 class="judul" type="btn-outline-success">
+      Selamat datang di latihan html dan css
+    </h1>
     <p>
       hai ini hanya latihan dan coba coba, maaf bila banyak kurangnya namanya
       juga latihan
     </p>
     <p>perkenalkan saya sedang belajar di <b>Elfan Ai Akademi </b></p>
     <div clasa="Img">
-      <img src="IMG_1300.jpg" style="width: 50%; height: 50%" ; />
+      <img src="IMG_1300.jpg" class="lingkaran" />
     </div>
     <div class="tabel">
       <h2>contoh tabel</h2>
-      <table>
+      <table class="table table-striped-columns">
         <tr>
           <th>NAMA</th>
           <th>ASAL</th>
           <th>NOMER</th>
         </tr>
         <tr>
-          <td>ANDI</td>
+          <td>Si bonT</td>
           <td>KEBUMEN</td>
           <td>081326555817</td>
         </tr>
@@ -38,20 +76,30 @@
     <div class="list">
       <h2>contoh list</h2>
       <p>List orang yang belum mandi</p>
-      <ol>
-        <li>Sayyid</li>
-        <li>Nopal</li>
-        <li>Salman</li>
-      </ol>
+      <ul class="list-group list-group-numbered">
+        <li class="list-group-item">Sayyid</li>
+        <li class="list-group-item">Nopal</li>
+        <li class="list-group-item">Salman</li>
+      </ul>
     </div>
-    <div class="From input">
-      <h2>contoh from input</h2>
-      <label>Nama lengkap:</label><br />
-      <input type="text" placeholder="Indra" /><br />
-      <label>nomer telepon:</label><br />
-      <input type="number" placeholder="081326555817" /><br />
-      <label>Tanggal Lahir</label><br />
-      <input type="date" />
+    <h2>contoh from input</h2>
+    <div class="input-group input-group-sm mb-3">
+      <label class="input-group-text" id="inputGroup-sizing-lg"
+        >Nama lengkap:</label
+      >
+      <input type="text" class="form-control" placeholder="Indra" /><br />
+      <label class="input-group-text" id="inputGroup-sizing-lg"
+        >nomer telepon:</label
+      >
+      <input
+        type="number"
+        class="form-control"
+        placeholder="081326555817"
+      /><br />
+      <label class="input-group-text" id="inputGroup-sizing-lg"
+        >Tanggal Lahir</label
+      >
+      <input type="date" class="form-control" />
     </div>
   </body>
   <footer></footer>

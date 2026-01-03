@@ -1,10 +1,18 @@
-header {
-  background-color: aqua;
-  color: aliceblue;
-}
-body {
+Body {
   font-family: "Times New Roman", Times, serif;
-  background-color: aqua;
+  background-color: #fffefe;
   margin: 0%;
   padding: 5%;
+  text-align: left;
+  font-size: 100%;
+}
+.judul {
+  background-color: #c38484;
+  text-align: center;
+}
+.lingkaran {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
