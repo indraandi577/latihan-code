@@ -16,3 +16,9 @@ Body {
   border-radius: 50%;
   object-fit: cover;
 }
+#footer {
+  background-color: black;
+  text-align: center;
+  font-style: initial;
+  color: #fffefe;
+}
