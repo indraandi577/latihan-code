@@ -1,0 +1,202 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assesment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+          
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.form-container div {
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+
+.form-control, .form-select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    box-sizing: border-box; 
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.form-control:focus, .form-select:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #0d6efd;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0b5ed7;
+}
+
+.row-flex {
+    display: flex;
+    gap: 15px;
+}
+
+.row-flex > div {
+    flex: 1;
+}
+@media (max-width: 480px) {
+    .row-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Elfan AI Academy</h1>
+    </header>
+
+    <div class="container">
+        <section id="tentang">
+            <h2>Tentang Elfan AI Academy</h2>
+            <p>Ini hanya mengerjakan tugas, isi bisa diganti jadi gak terlalu penting mau di baca atau ngga</p>
+            <p>dan ini adalah landingpage dan nanti juga ada from ppdb</p>
+        </section>
+
+        <section id="fitur">
+            <h2>PPDB Elfan AI Academy</h2>
+            <P>silahkan isi formulir dibawah ini</P>
+            <div>
+                            <div class="form-container"> <form>
+        <div>
+            <label>Nama Lengkap Calon Siswa</label>
+            <input type="text" name="nama_lengkap" class="form-control rounded-3" placeholder="Masukkan nama sesuai ijazah" required>
+        </div>
+        
+        <div>
+            <label>Asal Sekolah</label>
+            <input type="text" name="asal_sekolah" class="form-control rounded-3" placeholder="sekolah pendidikan terakhir" required>
+        </div>
+
+        <div class="row-flex">
+            <div>
+                <label>Jenis Kelamin</label>
+                <select name="jenis_kelamin" class="form-select rounded-3" required>
+                    <option value="">-- Pilih --</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div>
+                <label>No. WhatsApp</label>
+                <input type="number" name="no_hp" class="form-control rounded-3" placeholder="0813.." required>
+                <small class="text-muted" style="display: block; margin-top: 4px;">* Pastikan nomor aktif</small>
+            </div>
+        </div>
+
+        <div>
+            <label>Alamat Singkat</label>
+            <textarea name="alamat" class="form-control rounded-3" rows="2" placeholder="Desa, Kecamatan, Kabupaten" required></textarea>
+        </div>
+
+        <button type="submit">
+            DAFTAR SEKARANG
+        </button>
+    </form>
+</div>
+
+
+
+        </section>
+
+        <section id="kontak">
+            <h2>Hubungi Kami</h2>
+            <p>0b1326555817</p>
+            <a href="indraandu577@gmail.com">Kirim Email</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 untuk tugas pak alfath.</p>
+    </footer>
+
+</body>
+</html>
